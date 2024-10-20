@@ -1,0 +1,50 @@
+Step 1: Create a Simple Java Program
+HelloWorld.java 
+// HelloWorld.java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+Step 2: Compile and Run Locally
+1- Save the above code in a file named HelloWorld.java.
+2- Open your terminal or command prompt.
+3- Navigate to the directory where the HelloWorld.java file is saved.
+javac HelloWorld.java
+java HelloWorld
+
+Step 3: Set Up Jenkins
+1- Install Jenkins
+
+2- Create a New Job:
+
+Open Jenkins in your web browser (http://localhost:8080 by default).
+
+Click on New Item.
+Enter a name for your job (e.g., JavaHelloWorld), select Freestyle project, and click OK.
+
+3- Configure the Job:
+
+In the job configuration page, scroll down to the Build section.
+Select Add build step and choose Execute Windows batch command 
+
+4- Enter Build Commands:
+
+In the command box, enter the following commands to compile and run the Java program:
+echo "Building Java Application"
+javac HelloWorld.java
+java HelloWorld
+
+5- Save the job
+
+Step 4: Execute the Job
+1-Go back to the main Jenkins dashboard.
+2-Click on your job (JavaHelloWorld).
+3-Click on Build Now to execute the job.
+4-Once the build is complete, click on the build number (e.g., #1) to view the console output.
+
+
+open that #number from build history
+go to console output
+paste the file in that directory

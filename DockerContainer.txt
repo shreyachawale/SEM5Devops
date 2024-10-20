@@ -1,0 +1,7 @@
+docker --version //after downloading
+
+docker run -d -p 80:80 --name mynginx nginx
+
+docker ps 
+
+http://localhost./
