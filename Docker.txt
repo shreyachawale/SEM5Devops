@@ -1,0 +1,13 @@
+terminal of docker
+
+git clone https://github.com/docker/welcome-to-docker
+
+cd welcome-to-docker
+
+docker build -t welcome-to-docker .
+
+run the container: first_container 
+host port:8089
+
+run from container
+
